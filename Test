@@ -1,2 +1,167 @@
-<HTML> </HTML>
-<P>Testtttt</P>
+<html> 
+<div id = "container">
+    <div id = "first">
+        <div id = "firstHead">
+            <div id = "head"> HEADER</div>
+            <div class = "headerlink">header link1</div>
+            <div class = "headerlink">header link2</div>
+            <div class = "headerlink">header link3</div>
+        </div>
+        <div id = "firstMid">
+            <div id = "left">
+                <p>This website is Awesome</p>
+                <p>This website has some subtext that goes under the main title. 
+                    It's a smaller font and the color is lower contrast
+                </p>
+                <button>Sign up</button>
+                </div>
+            <div id = "right"><p>placeholder</p></div>
+        </div>
+
+    </div> 
+    <div id = "second">
+        <div>Some random info.</div>
+        <div id = "div1">
+            <div class = "div2">
+                <div class = "box" ></div>
+                <p> Box description</p>
+            </div>
+            <div class = "div2">
+                <div class = "box" ></div>
+                <p> Box description</p>
+            </div>
+            <div class = "div2">
+                <div class = "box" ></div>
+                <p> Box description</p>
+            </div>
+            <div class = "div2">
+                <div class = "box" ></div>
+                <p> Box description</p>
+            </div>
+            </div>
+            
+    </div>
+    <div id = "third">
+        <p>This is an inspiring quote, or a testimonial from a customer.
+            Maybe it's just filling up space, or maybe people will actually read it. Who Knows?
+            All I know is that it looks nice.
+        </p>
+        <p>-Thor, God Of Thunder</p>
+    </div>
+    <div id = "fourth">
+        <div id = "left">
+            Call to action! It's time!
+            Sign up for out product by clicking that button over there!
+        </div>
+        <div id = "right">
+            <button>Sign up</button>
+        </div>
+    </div>
+
+    </div>
+
+</html>
+
+<!-- CSS section because I forgot how to import CSS for now -->
+<style>
+#first {
+    background-color: red;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#firstHead{
+    background-color: aliceblue;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#head{
+    flex-grow: 8;
+}
+
+.headerlink{
+    flex-grow: 1;
+}
+#firstMid{
+    background-color: aqua;
+    flex-grow: 5;
+    display: flex;
+    align-content: space-around;
+}
+
+#left{
+    width: 800px;
+    display: flex;
+    align-items: center;
+}
+
+#right{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#second {
+    background-color: pink;
+    height: 300px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#third {
+    background-color: aqua;
+    height: 200px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fourth{
+    background-color: dimgray;
+    height: 200px;
+    display: flex;
+}
+
+#container {
+    display: flexbox;
+    flex-grow: 1;
+}
+
+#div1{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.div2{
+    width: 100px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box{
+    border: 4px solid brown;
+    border-color: black;
+    background-color: antiquewhite;
+    height: 100px;
+    width: 100px;
+
+
+
+}
+    </style>
